@@ -1,0 +1,77 @@
+body {
+	background-color: #3e3939;
+}
+
+button {
+	font-family: 'Nunito', sans-serif;
+	position: absolute;
+	padding: 10px 30px;
+	width: 120px;
+	top: 50px;
+	padding: 10 30;
+	background-color: transparent;
+	color: #fff;
+	border-color: #fff;
+	border: 3px solid;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	/* letter-spacing: 2px; */
+	transition: 0.2s;
+}
+.btn-zoom {
+	left: 25%;
+}
+.btn-move {
+	left: 50%;
+}
+.btn-color {
+	left: 75%;
+}
+
+button:hover {
+	background-color: #fff;
+	color: #3e3939;
+}
+
+.btn-zoom:hover ~ .square {
+	width: 200px;
+	height: 200px;
+}
+
+.btn-move:hover ~ .square {
+	top: 400px;
+}
+
+.btn-color:hover ~ .square {
+	background-color: black;
+	box-shadow: none;
+}
+
+.square {
+	position: absolute;
+	top: 150px;
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+
+.blue {
+	left: 25%;
+	background-color: blue;
+	box-shadow: 0 0 15px blue;
+}
+.red {
+	left: 50%;
+	background-color: red;
+	box-shadow: 0 0 15px red;
+}
+.green {
+	left: 75%;
+	background-color: limegreen;
+	box-shadow: 0 0 15px limegreen;
+}
